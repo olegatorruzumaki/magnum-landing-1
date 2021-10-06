@@ -1,4 +1,20 @@
 {
   "bgTitle-1": "Barakali",
-  "bgTitle-2": " bozorlik\nsiri ochamiz!"
+  "bgTitle-2": " bozorlik<br>siri ochamiz!",
+  "tabs-title": "Muvaffaqiyat uchun formulamiz:",
+  "tabs-1": "VIJDONLI",
+  "tabs-2": "TEZKOR",
+  "tabs-3": "ISHONCHLI",
+  "tabs-content-1": "Samimiylik va ishonch biz uchun shunchaki so'zlar emas, biz so'z beramiz va o'z majburiyatlarimizni halollik bilan bajaramiz.",
+  "tabs-content-2": "Bizning jamoamiz o'z vaqtidan oldinda: birgalikda o'zgarishlardan qo'rqmaymiz, biz har doim bir-birimizga yordam beramiz va maqsadlarimizga erishamiz.",
+  "tabs-content-3": "Ishonchimiz komilki, doimiy ravishda takomillashtirish va rivojlantirish kasbiy mahorat va samaradorlik sari tashlangan birinchi qadamdir. Ishonchli bo'lish, o'zingizga va ishingizga sodiq bo'lishni anglatadi.",
+  "footer-1": "ish qidiruvchilar uchun",
+  "footer-2": "etkazib beruvchilar uchun",
+  "footer-3": "reklama va ommaviy axborot vositalari uchun",
+  "modal-title": "ОСТАВЬТЕ ЗАЯВКУ",
+  "modal-1": "Имя",
+  "modal-2": "E-mail",
+  "modal-3": "Телефон",
+  "modal-send": "ОТПРАВИТЬ",
+  "modal-footer": "Мы обязательно свяжемся с Вами"
 }

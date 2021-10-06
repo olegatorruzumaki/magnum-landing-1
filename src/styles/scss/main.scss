@@ -2,80 +2,64 @@
   cursor: pointer;
 }
 
-.header {
-  padding: 20px;
-}
-
-.main__lang {
-  height: 100%;
-  border-radius: 5px;
-  font-size: 16px;
-  line-height: 18px;
-  color: #A2004B;
-  border: 2px solid white;
-
-  .test2 {
-    border-left: 2px solid #E6E6E6;
+.modal {
+  .modal-body {
+    padding: 60px 0;
   }
 
-  .test3 {
-    border-left: 2px solid #E6E6E6;
+  .modal__title {
+    margin-bottom: 80px;
+    color: #090909;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 46px;
   }
 
-  .test1.selected + .test2 {
-    border-left: 2px solid transparent;
-  }
+  input {
+    border: none;
+    background: #F1F1F1;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    padding: 15px 24px;
+    width: 100%;
+    max-width: 400px;
+    color: #A2004B;
 
-  .test2.selected {
-    border-left: 2px solid transparent;
+    &::placeholder {
+      color: #A2004B;
+    }
 
-    & + .test3 {
-      border-left: 2px solid transparent;
+    &:focus-visible{
+      outline: 0;
     }
   }
 
-  .test3.selected {
-    border-left: 2px solid transparent;
+  button {
+    background: #A2004B;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 0;
+    border: 0;
   }
 
-  div {
-    padding: 0 12px;
-    background: white;
-
-    &.selected {
-      background: transparent;
-      color: white;
-    }
+  .modal__footer {
+    font-style: normal;
+    margin-top: 80px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #090909;
   }
-}
-
-.main__base {
-  background: url('../../assets/Background.svg');
-  height: 800px;
-}
-
-.main__title {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 150px;
-  line-height: 150px;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.main__title-1 {
-  z-index: 3;
-}
-
-.main__title-2 {
-  z-index: 2;
-  top: 57%;
-  left: 50%;
-  transform: translate(-50%, -43%)
-}
-
-.main__title-3 {
-  z-index: 3;
-  position: relative;
 }
