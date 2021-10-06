@@ -1,0 +1,81 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.header {
+  padding: 20px;
+}
+
+.main__lang {
+  height: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #A2004B;
+  border: 2px solid white;
+
+  .test2 {
+    border-left: 2px solid #E6E6E6;
+  }
+
+  .test3 {
+    border-left: 2px solid #E6E6E6;
+  }
+
+  .test1.selected + .test2 {
+    border-left: 2px solid transparent;
+  }
+
+  .test2.selected {
+    border-left: 2px solid transparent;
+
+    & + .test3 {
+      border-left: 2px solid transparent;
+    }
+  }
+
+  .test3.selected {
+    border-left: 2px solid transparent;
+  }
+
+  div {
+    padding: 0 12px;
+    background: white;
+
+    &.selected {
+      background: transparent;
+      color: white;
+    }
+  }
+}
+
+.main__base {
+  background: url('../../assets/Background.svg');
+  height: 800px;
+}
+
+.main__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 150px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main__title-1 {
+  z-index: 3;
+}
+
+.main__title-2 {
+  z-index: 2;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -43%)
+}
+
+.main__title-3 {
+  z-index: 3;
+  position: relative;
+}
