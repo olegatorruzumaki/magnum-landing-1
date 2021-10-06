@@ -1,0 +1,43 @@
+variables:
+  BUILD_IMAGE: 'node:10.15.0'
+  BUILD_STRING: 'npm run build'
+  INSTALL_STRING: "npm --loglevel info install"
+  ARTIFACT_PATH: node_modules
+
+.node:
+  image: docker-registry.kar-tel.local/devops/${BUILD_IMAGE}
+  stage: build
+  artifacts:
+    when: always
+    expire_in: 60 minutes
+    paths:
+      - $ARTIFACT_PATH
+  only:
+    - branches
+    - merge_requests
+  cache:
+    key: node
+    paths:
+      - node_modules
+  script:
+    - env
+#    - export http_proxy=http://172.28.8.120:3128 && export https_proxy=http://172.28.8.120:3128
+    - export http_proxy=http://Tech_Linux_Repo:8CNrnd_Agl@172.28.8.120:3128 && export https_proxy=http://Tech_Linux_Repo:8CNrnd_Agl@172.28.8.120:3128
+    - ${BUILD_STRING}
+ 
+build:
+  extends: .node
+  script: 
+    - echo "install - ${INSTALL_STRING}, build - ${BUILD_STRING}"
+    - ${INSTALL_STRING}
+    - ${BUILD_STRING}
+
+stages:
+  - build
+  - containerize
+
+include:
+  - project: 'devops/gitlab-ci-templates'
+    file: 'build/node.yml'
+  - project: 'devops/gitlab-ci-templates'
+    file: 'containerize/docker.yml'
